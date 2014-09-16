@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  display: -webkit-flex;
+  background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-wrap: nowrap;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 7vw;
+  text-align: center;
+  justify-content: center;
+  margin-top: -8px;
+}
+
+.tagline {
+  flex-direction: column;
+  margin-top: -11%;
+  font-size: 1.5vw;
+}
+
+.icons {
+  flex-direction: column;
+  bottom: 1%;
+  font-size: 1.5vw;
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  width: 50%;
+}
+
+li {
+  display: inline;
+  margin-right: 8%;
+  font-weight: 700;
+}
