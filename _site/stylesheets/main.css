@@ -9,7 +9,11 @@ body {
 }
 
 .container {
-  flex-wrap: nowrap;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  /*flex-wrap: nowrap;*/
 }
 
 h1 {
@@ -18,6 +22,7 @@ h1 {
   text-align: center;
   justify-content: center;
   margin-top: -8px;
+  align-self: flex-start;
 }
 
 .tagline {
@@ -27,17 +32,29 @@ h1 {
 }
 
 .icons {
-  flex-direction: column;
-  bottom: 1%;
-  font-size: 1.5vw;
-  text-align: center;
-  position: absolute;
+  flex-direction: row;
+  font-size: 1.2vw;
   justify-content: center;
-  width: 50%;
+  width: 54%;
+  position: absolute;
+  bottom: 0;
+  flex-wrap: nowrap;
 }
 
 li {
   display: inline;
   margin-right: 8%;
   font-weight: 700;
+  align-items: top;
+  position: relative;
+  top: -11px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li img {
+  position: relative;
+  top: 8px;
 }
