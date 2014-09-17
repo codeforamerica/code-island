@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  display: -webkit-flex;
+  background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  color: #FFF;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a76e58;
+}
+
+.container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  /*flex-wrap: nowrap;*/
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 7vw;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10%;
+  align-self: flex-start;
+}
+
+.tagline {
+  flex-direction: column;
+  margin-top: -15%;
+  font-size: 1.5vw;
+}
+
+.icons * {
+  border: 1px solid white;
+}
+.icons {
+  flex-direction: row;
+  font-size: 1.2vw;
+  justify-content: center;
+  width: 54%;
+  position: absolute;
+  bottom: 0;
+  flex-wrap: nowrap;
+}
+
+li {
+  display: inline;
+  margin-right: 8%;
+  font-weight: 700;
+  letter-spacing: 2px;
+  align-items: top;
+  position: relative;
+  top: -11px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li img {
+  position: relative;
+  top: 8px;
+}

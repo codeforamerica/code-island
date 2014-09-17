@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a76e58;
+}
+
+nav {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body {
+  background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  color: #FFF;
+}
+
+.about {
+  height: 600px;
+  background-color: black;
+  width: 100%;
+}
+
+.intro {
+  height: 640px;
+}
+/* Wide */
+@media screen and (min-width: 961px) {
+
+}
+
+
+/* Medium */
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  header {
+    text-align: center;
+  }
+
+  h1 { font-size: 11vw; }
+
+  nav {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+  }
+}
+
+
+/* Narrow */
+@media screen and (max-width: 450px) {
+  header {
+    text-align: center;
+  }
+
+  h1 { font-size: 11vw; }
+
+  article {
+    display: -webkit-flex;
+    -webkit-align-items: start;
+  }
+
+  article:nth-child(odd) {
+    -webkit-flex-direction: row;
+  }
+  article:nth-child(even){
+    -webkit-flex-direction: row-reverse;
+  }
+
+  .intro {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    justify-content: center;
+  }
+
+  nav {
+    -webkit-order: 999;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+  }
+}
