@@ -44,7 +44,13 @@ body {
     text-align: center;
   }
 
-  h1 { font-size: 11vw; }
+  h1 { font-size: 11vw; margin-top: 25%;}
+  h3 { 
+    margin-top: -25%; 
+    margin-bottom: 35%;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
 
   nav {
     display: -webkit-flex;
