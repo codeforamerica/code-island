@@ -46,6 +46,10 @@ body {
     font-size: 1.5vw;
   }
 
+  nav img {
+    width: 100px;
+  }
+
   nav a {
     display: block;
     padding: 10px 0;
@@ -91,6 +95,10 @@ body {
     -webkit-flex-direction: row;
     -webkit-justify-content: space-between;
   }
+
+  nav img {
+    width: 80px;
+  }
 }
 
 
@@ -125,6 +133,12 @@ body {
     display: -webkit-flex;
     -webkit-justify-content: space-around;
     self-align: flex-start;
+    font-size: 90%;
+  }
+
+  nav img {
+    width: 75px;
+    margin-top: -5px;
   }
 
   h3 { 
