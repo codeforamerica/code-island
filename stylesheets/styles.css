@@ -2,6 +2,12 @@ html, body {
   height: 100%;
 }
 
+body {
+  background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  color: #FFF;
+}
+
 a {
   color: #FFF;
   text-decoration: none;
@@ -17,21 +23,62 @@ nav {
   text-transform: uppercase;
 }
 
-body {
-  background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  color: #FFF;
-}
-
 .about {
-  height: 640px;
+  margin-top: 640px;
+  height: 100%;
   background-color: black;
   width: 100%;
 }
 
 .intro {
-  height: 640px;
+  height: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  justify-content: center;
 }
+
+header {
+  text-align: center;
+}
+
+h1 { font-size: 12vw; }
+
+nav {
+  -webkit-order: 999;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  font-size: 90%;
+  text-align: center;
+  font-size: 5vw;
+}
+
+nav a {
+  display: block;
+  padding: 2% 0;
+}
+
+nav a:hover {
+  background-color: black;
+  color: #FFF;
+}
+
+/*nav a:first-child {
+  padding-top: 20%;
+}*/
+
+nav img {
+  width: 100px;
+}
+
+h3 { 
+  font-weight: 400; 
+  margin-bottom: 45%; 
+  letter-spacing: 1px; 
+  padding-left: 2%; 
+  padding-right: 2%;
+}
+
+
 /* Wide */
 @media screen and (min-width: 961px) {
 
@@ -42,7 +89,7 @@ body {
   }
 
   nav { 
-    margin-left: 10%; 
+    margin-left: 5%; 
     font-size: 1.5vw;
   }
 
@@ -53,6 +100,11 @@ body {
   nav a {
     display: block;
     padding: 10px 0;
+  }
+
+  nav a:hover {
+    background-color: transparent;
+    color: pink;
   }
 
   nav a:first-child {
@@ -69,12 +121,15 @@ body {
   h3 { 
     text-align: center; 
     font-weight: 500;
+    font-size: 150%;
+    width: 65%;
+    margin-left: 15%;
   }
 }
 
 
 /* Medium */
-@media screen and (min-width: 451px) and (max-width: 960px) {
+@media screen and (min-width: 569px) and (max-width: 960px) {
   header {
     text-align: center;
   }
@@ -84,26 +139,35 @@ body {
     margin-top: 25%;
   }
   h3 { 
-    margin-top: -25%; 
+    margin-top: -19%; 
     margin-bottom: 35%;
     font-weight: 400;
     letter-spacing: 1px;
+    font-size: 3.5vw;
+    line-height: 4vw;
   }
 
   nav {
     display: -webkit-flex;
     -webkit-flex-direction: row;
     -webkit-justify-content: space-between;
+    font-size: 3vw;
+  }
+
+  nav a:hover {
+    background-color: transparent;
+    color: pink;
   }
 
   nav img {
-    width: 80px;
+    width: 100px;
+    margin-top: -5px;
   }
 }
 
 
 /* Narrow */
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 481px) and (max-width: 568px){
   header {
     text-align: center;
   }
@@ -132,9 +196,15 @@ body {
     -webkit-order: 999;
     display: -webkit-flex;
     -webkit-justify-content: space-around;
-    self-align: flex-start;
+    -webkit-flex-direction: row;
     font-size: 90%;
   }
+
+  nav a:hover {
+    background-color: transparent;
+    color: pink;
+  }
+
 
   nav img {
     width: 75px;
