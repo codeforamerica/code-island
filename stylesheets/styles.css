@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  background-color: #473b4a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -203,30 +203,45 @@ section {
   margin-top: 2%;
 }
 
+/* ========== PARTNERS ===========*/
+
+.partners {
+  margin-top: 640px;
+  height: 100%;
+  background-color: #c8aa86;
+  color: #f2e4d4;
+}
+
+.partners h2{
+  letter-spacing: 2px;
+}
+
 
 /* Wide */
 @media screen and (min-width: 961px) {
 
-  .intro {
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    /*margin-left: 5%;*/
+  body {
+    background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
   }
 
-  .about {
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
+  /* =========== header ============== */
+
+  h1 { 
+    font-size: 10vw;
+    text-align: center;
+    width: 100%;
+    margin-top: 12%;
   }
 
-  .contact {
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
+  h3 { 
+    text-align: center; 
+    font-weight: 500;
+    font-size: 150%;
+    width: 65%;
+    margin-left: 15%;
   }
 
-  .projects {
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-  }
+  /* =========== nav =============== */
 
   nav { 
     font-size: 1.5vw;
@@ -250,18 +265,44 @@ section {
     color: pink;
   }
 
+  /* =========== intro =============== */
+
+  .intro {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    /*margin-left: 5%;*/
+  }
+
+  /* =========== about =============== */
+
+  .about {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+  }
+
+  .about h2 {
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+
   section {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row-reverse;
-    /*-webkit-justify-content: space-around;*/
     width: 100%;
+  }
+
+  .team-bio {
+    min-width: 900px;
+    line-height: 150%;
+    margin: 0 auto 2% auto;
+    font-size: 115%;
   }
 
   .avatar {
     max-width: 280px;
     min-width: 270px;
-    margin: 0 auto 10% auto;
+    margin: 0 auto 5% auto;
   }
 
   .avatar figure {
@@ -278,36 +319,31 @@ section {
     max-width: 320px;
   }
 
-  .team-bio {
-    min-width: 900px;
-    line-height: 150%;
-    margin: 0 auto 10% auto;
-    font-size: 115%;
+  /* =========== contact ============== */
+
+  .contact {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
   }
 
-  h1 { 
-    font-size: 10vw;
-    text-align: center;
-    width: 100%;
-    margin-top: 12%;
+  /* =========== projects ============= */
+
+  .projects {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
   }
 
-  h3 { 
-    text-align: center; 
-    font-weight: 500;
-    font-size: 150%;
-    width: 65%;
-    margin-left: 15%;
-  }
-
-  .about h2 {
-    margin-top: 0;
-  }
 }
 
 
 /* Medium */
 @media screen and (min-width: 569px) and (max-width: 960px) {
+
+  body {
+    background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  }
+
+  /* =========== header =============== */
   header {
     text-align: center;
   }
@@ -325,6 +361,8 @@ section {
     line-height: 4vw;
   }
 
+  /* =========== nav =============== */
+
   nav {
     display: -webkit-flex;
     -webkit-flex-direction: row;
@@ -341,6 +379,8 @@ section {
     width: 100px;
     margin-top: -5px;
   }
+
+  /* =========== about =============== */
 
   section {
     display: -webkit-flex;
@@ -370,29 +410,24 @@ section {
 
 /* Narrow */
 @media screen and (min-width: 481px) and (max-width: 568px){
+
+  /* =========== header =============== */
+
   header {
     text-align: center;
   }
 
   h1 { font-size: 12vw; }
 
-  article {
-    display: -webkit-flex;
-    -webkit-align-items: start;
+  h3 { 
+    font-weight: 400; 
+    margin-bottom: 45%; 
+    letter-spacing: 1px; 
+    padding-left: 2%; 
+    padding-right: 2%;
   }
 
-  article:nth-child(odd) {
-    -webkit-flex-direction: row;
-  }
-  article:nth-child(even){
-    -webkit-flex-direction: row-reverse;
-  }
-
-  .intro {
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    justify-content: center;
-  }
+  /* ============ nav ================ */
 
   nav {
     -webkit-order: 999;
@@ -407,17 +442,16 @@ section {
     color: pink;
   }
 
-
   nav img {
     width: 75px;
     margin-top: -5px;
   }
 
-  h3 { 
-    font-weight: 400; 
-    margin-bottom: 45%; 
-    letter-spacing: 1px; 
-    padding-left: 2%; 
-    padding-right: 2%;
+  /* =========== intro =============== */
+
+  .intro {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    justify-content: center;
   }
 }
