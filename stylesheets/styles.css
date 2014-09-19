@@ -175,11 +175,6 @@ section {
 .contact {
   margin-top: 640px;
   height: 100%;
-  background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .contact a {
@@ -322,6 +317,11 @@ section {
   /* =========== contact ============== */
 
   .contact {
+    background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: -webkit-flex;
     -webkit-flex-direction: column;
   }
@@ -405,6 +405,16 @@ section {
     height: 120px;
   }
 
+  /* =========== contact =============== */
+
+  .contact {
+    background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 }
 
 
@@ -454,4 +464,14 @@ section {
     -webkit-flex-direction: column;
     justify-content: center;
   }
+
+  /* ===========contact ============ */
+  .contact {
+    background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 }
