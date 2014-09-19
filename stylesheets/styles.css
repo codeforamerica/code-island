@@ -20,96 +20,25 @@ a:hover {
   color: #a76e58;
 }
 
-nav {
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.about {
-  margin-top: 640px;
-  height: 120%;
-  background-color: black;
-  width: 100%;
-  align-content: center;
-}
-
-.projects {
-  margin-top: 640px;
-  height: 100%;
-  background-color: #afafc0;
-}
-
-.contact {
-  margin-top: 640px;
-  height: 100%;
-  background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.about h2 {
-  padding-top: 5%;
-}
-
-.contact h2 {
-  color: #000;
-}
-
-section {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  justify-content: center;
-}
-
-.avatar {
-  margin: 0 auto 10% auto;
-}
-
-.avatar figure {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #413945;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.avatar figure img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-.avatar figcaption {
-  text-align: center;
-  margin-top: 5%;
-  white-space: nowrap;
-  width: 100%;
-}
-
-
-.intro {
-  height: 100%;
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
-  justify-content: center;
-}
+/* ============ HEADER ============*/
 
 header {
   text-align: center;
-  /*flex: 1;*/
 }
 
 h1 { font-size: 12vw; }
 
 h2 { font-size: 10vw; }
+
+h3 { 
+  font-weight: 400; 
+  margin-bottom: 45%; 
+  letter-spacing: 1px; 
+  padding-left: 2%; 
+  padding-right: 2%;
+}
+
+/* ============ NAV  ==============*/
 
 nav {
   -webkit-order: 999;
@@ -126,25 +55,156 @@ nav a {
 }
 
 nav a:hover {
-  background-color: black;
+  background-color: #000;
   color: #FFF;
 }
 
-/*nav a:first-child {
-  padding-top: 20%;
-}*/
+nav {
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
 nav img {
   width: 100px;
 }
 
-h3 { 
-  font-weight: 400; 
-  margin-bottom: 45%; 
-  letter-spacing: 1px; 
-  padding-left: 2%; 
-  padding-right: 2%;
+
+/* =========== INTRO  =============*/
+
+.intro {
+  height: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  justify-content: center;
 }
+
+
+/* ============ ABOUT =============*/
+
+.about {
+  margin-top: 640px;
+  min-height: 120%;
+  background-color: #32272c;
+  width: 100%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  padding-top: 5%;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  justify-content: center;
+}
+
+.team-bio {
+  max-width: 320px;
+  line-height: 150%;
+  margin: 0 auto 10% auto;
+}
+
+.avatar {
+  max-width: 320px;
+  margin: 0 auto 10% auto;
+}
+
+.avatar figure {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #413945;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.avatar figure img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.avatar figcaption {
+  text-align: center;
+  margin-top: 5%;
+  white-space: nowrap;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 110%;
+}
+
+.avatar .bio {
+  max-width: 300px;
+}
+
+.bio {
+  margin-top: 5%;
+  line-height: 150%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ========== PROJECTS ===========*/
+
+.projects {
+  margin-top: 640px;
+  height: 100%;
+  background-color: #afafc0;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 120%;
+}
+
+
+/* ========== CONTACT ===========*/
+
+.contact {
+  margin-top: 640px;
+  height: 100%;
+  background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact a {
+  color: #000;
+}
+
+.contact a:hover {
+  color: #91382d;
+}
+
+.contact h2 {
+  color: #000;
+}
+
+.contact nav a:hover {
+  background-color: #FFF;
+  opacity: .5;
+}
+
+.contact h2 {
+  margin-top: 2%;
+}
+
+
+
 
 
 /* Wide */
@@ -153,7 +213,7 @@ h3 {
   .intro {
     display: -webkit-flex;
     -webkit-flex-direction: column;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
   }
 
   .about {
@@ -202,6 +262,8 @@ h3 {
   }
 
   .avatar {
+    max-width: 280px;
+    min-width: 270px;
     margin: 0 auto 10% auto;
   }
 
@@ -213,6 +275,17 @@ h3 {
   .avatar figure img {
     width: 150px;
     height: 150px;
+  }
+
+  .avatar .bio {
+    max-width: 320px;
+  }
+
+  .team-bio {
+    min-width: 900px;
+    line-height: 150%;
+    margin: 0 auto 10% auto;
+    font-size: 115%;
   }
 
   h1 { 
