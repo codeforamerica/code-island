@@ -28,10 +28,9 @@ nav {
 
 .about {
   margin-top: 640px;
-  height: 120%;
+  height: 100%;
   background-color: black;
   width: 100%;
-  align-content: center;
 }
 
 .projects {
@@ -50,48 +49,20 @@ nav {
   background-size: cover;
 }
 
-.about h2 {
-  padding-top: 5%;
-}
-
 .contact h2 {
   color: #000;
 }
 
-section {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  justify-content: center;
-}
-
-.avatar {
-  margin: 0 auto 10% auto;
-}
-
-.avatar figure {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #413945;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.avatar figure img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-.avatar figcaption {
-  text-align: center;
-  margin-top: 5%;
-  white-space: nowrap;
-  width: 100%;
+figure {
+  width: 120px;
+  border: 6px solid white;
+  border-radius: 100px;
+  height: 80px;
+  left: 50%;
+  margin-left: -46px;
+  position: absolute;
+  top: -45px;
+  width: 80px;
 }
 
 
@@ -104,7 +75,7 @@ section {
 
 header {
   text-align: center;
-  /*flex: 1;*/
+  flex: 1;
 }
 
 h1 { font-size: 12vw; }
@@ -152,31 +123,29 @@ h3 {
 
   .intro {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
+    -webkit-flex-direction: row;
     margin-left: 5%;
   }
 
   .about {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
+    -webkit-flex-direction: row;
   }
 
   .contact {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
+    -webkit-flex-direction: row;
   }
 
   .projects {
     display: -webkit-flex;
-    -webkit-flex-direction: column;
+    -webkit-flex-direction: row;
   }
 
   nav { 
+    margin-left: 5%; 
     font-size: 1.5vw;
-    /*margin-right: 5%;*/
-    display: -webkit-flex;
-    -webkit-justify-content: space-around;
-    -webkit-flex-direction: row;
+    margin-right: 5%;
   }
 
   nav img {
@@ -185,7 +154,7 @@ h3 {
 
   nav a {
     display: block;
-    padding: 10px 0 2% 0;
+    padding: 10px 0;
   }
 
   nav a:hover {
@@ -193,26 +162,8 @@ h3 {
     color: pink;
   }
 
-  section {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row-reverse;
-    /*-webkit-justify-content: space-around;*/
-    width: 100%;
-  }
-
-  .avatar {
-    margin: 0 auto 10% auto;
-  }
-
-  .avatar figure {
-    width: 150px;
-    height: 150px;
-  }
-
-  .avatar figure img {
-    width: 150px;
-    height: 150px;
+  nav a:first-child {
+    padding-top: 130px;
   }
 
   h1 { 
@@ -228,10 +179,6 @@ h3 {
     font-size: 150%;
     width: 65%;
     margin-left: 15%;
-  }
-
-  .about h2 {
-    margin-top: 0;
   }
 }
 
@@ -271,30 +218,6 @@ h3 {
     width: 100px;
     margin-top: -5px;
   }
-
-  section {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -webkit-justify-content: space-around;
-    width: 100%;
-    flex: -1;
-  }
-
-  .avatar {
-    margin: 0 auto 10% auto;
-  }
-
-  .avatar figure {
-    width: 120px;
-    height: 120px;
-  }
-
-  .avatar figure img {
-    width: 120px;
-    height: 120px;
-  }
-
 }
 
 

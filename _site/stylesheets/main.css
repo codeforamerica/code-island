@@ -5,7 +5,16 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   color: #FFF;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a76e58;
 }
 
 .container {
@@ -21,16 +30,19 @@ h1 {
   font-size: 7vw;
   text-align: center;
   justify-content: center;
-  margin-top: -8px;
+  margin-top: 10%;
   align-self: flex-start;
 }
 
 .tagline {
   flex-direction: column;
-  margin-top: -11%;
+  margin-top: -15%;
   font-size: 1.5vw;
 }
 
+.icons * {
+  border: 1px solid white;
+}
 .icons {
   flex-direction: row;
   font-size: 1.2vw;
@@ -45,6 +57,7 @@ li {
   display: inline;
   margin-right: 8%;
   font-weight: 700;
+  letter-spacing: 2px;
   align-items: top;
   position: relative;
   top: -11px;
