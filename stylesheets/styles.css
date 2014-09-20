@@ -208,7 +208,7 @@ section {
 
 .partners {
   margin-top: 640px;
-  height: 100%;
+  height: 120%;
   background-color: #c8aa86;
   color: #f2e4d4;
 }
@@ -332,12 +332,32 @@ section {
     -webkit-flex-direction: column;
   }
 
+  .contact nav a:hover {
+    background-color: transparent;
+  }
+
   /* =========== projects ============= */
 
   .projects {
     display: -webkit-flex;
     -webkit-flex-direction: column;
   }
+
+  /* =========== partners ============= */
+
+  .partners .avatar {
+    max-width: 720px;
+  }
+
+  .partners .avatar figure {
+    border: 1px solid #b39571;
+  }
+
+  .partners .avatar .bio {
+    max-width: 720px;
+  }
+
+
 
 }
 
@@ -421,6 +441,10 @@ section {
     background-size: cover;
   }
 
+  .contact nav a:hover {
+    background-color: transparent;
+  }
+
 }
 
 
@@ -472,12 +496,9 @@ section {
   }
 
   /* ===========contact ============ */
-  .contact {
-/*    background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
+
+  .contact nav a:hover {
+    background-color: transparent;
   }
 
 }
