@@ -167,6 +167,24 @@ section {
   display: flex;
   flex-direction: column;
   min-height: 120%;
+  color: #483d39;
+}
+
+.projects .avatar figure{
+  width: 200px;
+  height: auto;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: 0;
+  border: none;
+}
+
+.projects .avatar figure img {
+  width: 200px;
+  height: auto;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: 0;
 }
 
 
@@ -341,6 +359,13 @@ section {
   .projects {
     display: -webkit-flex;
     -webkit-flex-direction: column;
+  }
+
+  .projects section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    width: 100%;
   }
 
   /* =========== partners ============= */
