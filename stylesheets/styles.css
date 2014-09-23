@@ -90,6 +90,7 @@ nav img {
   align-content: center;
   display: flex;
   flex-direction: column;
+  padding-left: 4%;
 }
 
 .about h2 {
