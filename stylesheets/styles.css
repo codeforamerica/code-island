@@ -101,6 +101,7 @@ section {
   display: flex;
   -webkit-flex-direction: column;
   justify-content: center;
+  width: 90%;
 }
 
 .team-bio {
