@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  background-color: #473b4a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -20,67 +20,25 @@ a:hover {
   color: #a76e58;
 }
 
-nav {
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.about {
-  margin-top: 640px;
-  height: 100%;
-  background-color: black;
-  width: 100%;
-}
-
-.projects {
-  margin-top: 640px;
-  height: 100%;
-  background-color: #afafc0;
-}
-
-.contact {
-  margin-top: 640px;
-  height: 100%;
-  background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.contact h2 {
-  color: #000;
-}
-
-figure {
-  width: 120px;
-  border: 6px solid white;
-  border-radius: 100px;
-  height: 80px;
-  left: 50%;
-  margin-left: -46px;
-  position: absolute;
-  top: -45px;
-  width: 80px;
-}
-
-
-.intro {
-  height: 100%;
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
-  justify-content: center;
-}
+/* ============ HEADER ============*/
 
 header {
   text-align: center;
-  flex: 1;
 }
 
 h1 { font-size: 12vw; }
 
 h2 { font-size: 10vw; }
+
+h3 { 
+  font-weight: 400; 
+  margin-bottom: 45%; 
+  letter-spacing: 1px; 
+  padding-left: 2%; 
+  padding-right: 2%;
+}
+
+/* ============ NAV  ==============*/
 
 nav {
   -webkit-order: 999;
@@ -97,74 +55,212 @@ nav a {
 }
 
 nav a:hover {
-  background-color: black;
+  background-color: #000;
   color: #FFF;
 }
 
-/*nav a:first-child {
-  padding-top: 20%;
-}*/
+nav {
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
 nav img {
   width: 100px;
 }
 
-h3 { 
-  font-weight: 400; 
-  margin-bottom: 45%; 
-  letter-spacing: 1px; 
-  padding-left: 2%; 
-  padding-right: 2%;
+
+/* =========== INTRO  =============*/
+
+.intro {
+  height: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  justify-content: center;
+}
+
+
+/* ============ ABOUT =============*/
+
+.about {
+  margin-top: 640px;
+  min-height: 120%;
+  background-color: #32272c;
+  width: 100%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  padding-top: 5%;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  justify-content: center;
+}
+
+.team-bio {
+  max-width: 320px;
+  line-height: 150%;
+  margin: 0 auto 10% auto;
+}
+
+.avatar {
+  max-width: 320px;
+  margin: 0 auto 10% auto;
+}
+
+.avatar figure {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #413945;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.avatar figure img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.avatar figcaption {
+  text-align: center;
+  margin-top: 5%;
+  white-space: nowrap;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 110%;
+}
+
+.avatar .bio {
+  max-width: 300px;
+}
+
+.bio {
+  margin-top: 5%;
+  line-height: 150%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ========== PROJECTS ===========*/
+
+.projects {
+  margin-top: 640px;
+  height: 100%;
+  background-color: #afafc0;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 185%;
+  color: #483d39;
+}
+
+.projects .avatar figure{
+  width: 200px;
+  height: auto;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: 0;
+  border: none;
+}
+
+.projects .avatar figure img {
+  width: 200px;
+  height: auto;
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: 0;
+}
+
+
+/* ========== CONTACT ===========*/
+
+.contact {
+  margin-top: 640px;
+  height: 120%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact a {
+  color: #000;
+}
+
+.contact a:hover {
+  color: #91382d;
+}
+
+.contact h2 {
+  color: #000;
+}
+
+.contact nav a:hover {
+  background-color: #FFF;
+  opacity: .5;
+}
+
+.contact h2 {
+  margin-top: 2%;
+}
+
+.contact h3 {
+  margin-left: 0;
+}
+
+.contact nav {
+  margin-bottom: 5%;
+}
+
+.contact section {
+  margin-left: 0;
+}
+
+.contact .subhead {
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 700;
+  text-align: center;
+  height: 80px;
+}
+
+/* ========== PARTNERS ===========*/
+
+.partners {
+  margin-top: 640px;
+  height: 200%;
+  background-color: #c8aa86;
+  color: #f6ece1;
+}
+
+.partners h2{
+  letter-spacing: 2px;
 }
 
 
 /* Wide */
 @media screen and (min-width: 961px) {
 
-  .intro {
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-    margin-left: 5%;
+  body {
+    background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
   }
 
-  .about {
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-  }
-
-  .contact {
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-  }
-
-  .projects {
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-  }
-
-  nav { 
-    margin-left: 5%; 
-    font-size: 1.5vw;
-    margin-right: 5%;
-  }
-
-  nav img {
-    width: 100px;
-  }
-
-  nav a {
-    display: block;
-    padding: 10px 0;
-  }
-
-  nav a:hover {
-    background-color: transparent;
-    color: pink;
-  }
-
-  nav a:first-child {
-    padding-top: 130px;
-  }
+  /* =========== header ============== */
 
   h1 { 
     font-size: 10vw;
@@ -180,11 +276,161 @@ h3 {
     width: 65%;
     margin-left: 15%;
   }
+
+  /* =========== nav =============== */
+
+  nav { 
+    font-size: 1.5vw;
+    /*margin-right: 5%;*/
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    -webkit-flex-direction: row;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 0 2% 0;
+  }
+
+  nav a:hover {
+    background-color: transparent;
+    color: pink;
+  }
+
+  /* =========== intro =============== */
+
+  .intro {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    /*margin-left: 5%;*/
+  }
+
+  /* =========== about =============== */
+
+  .about {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+  }
+
+  .about h2 {
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+
+  section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .team-bio {
+    min-width: 900px;
+    line-height: 150%;
+    margin: 0 auto 2% auto;
+    font-size: 115%;
+  }
+
+  .avatar {
+    max-width: 280px;
+    min-width: 270px;
+    margin: 0 auto 5% auto;
+  }
+
+  .avatar figure {
+    width: 150px;
+    height: 150px;
+  }
+
+  .avatar figure img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .avatar .bio {
+    max-width: 320px;
+  }
+
+  /* =========== contact ============== */
+
+  .contact {
+    background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+  }
+
+  .contact nav a:hover {
+    background-color: transparent;
+  }
+
+  /* =========== projects ============= */
+
+  .projects {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+  }
+
+
+  /* =========== partners ============= */
+
+  .partners{
+    height: 270%;
+  }
+
+  .partners section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: flex-start;
+    width: 100%;
+  }
+
+  .partners section .ode{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+  }
+
+  .partners .avatar {
+    max-width: 720px;
+    position: relative;
+  }
+
+  .partners .avatar figure {
+    border: none;
+  }
+
+  .partners .avatar .bio {
+    max-width: 720px;
+  }
+  
+  .size1 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
 }
 
 
 /* Medium */
 @media screen and (min-width: 569px) and (max-width: 960px) {
+
+  body {
+    background: url(../images/overlooking-providence-greyed.png) no-repeat center center fixed;
+  }
+
+  /* =========== header =============== */
   header {
     text-align: center;
   }
@@ -202,6 +448,8 @@ h3 {
     line-height: 4vw;
   }
 
+  /* =========== nav =============== */
+
   nav {
     display: -webkit-flex;
     -webkit-flex-direction: row;
@@ -218,34 +466,69 @@ h3 {
     width: 100px;
     margin-top: -5px;
   }
+
+  /* =========== about =============== */
+
+  section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-around;
+    width: 100%;
+    flex: -1;
+  }
+
+  .avatar {
+    margin: 0 auto 10% auto;
+  }
+
+  .avatar figure {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar figure img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* =========== contact =============== */
+
+  .contact {
+    background:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)) fixed, url(../images/yes.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .contact nav a:hover {
+    background-color: transparent;
+  }
+
 }
 
 
 /* Narrow */
 @media screen and (min-width: 481px) and (max-width: 568px){
+
+  /* =========== header =============== */
+
   header {
     text-align: center;
   }
 
   h1 { font-size: 12vw; }
 
-  article {
-    display: -webkit-flex;
-    -webkit-align-items: start;
+  h3 { 
+    font-weight: 400; 
+    margin-bottom: 45%; 
+    letter-spacing: 1px; 
+    padding-left: 2%; 
+    padding-right: 2%;
   }
 
-  article:nth-child(odd) {
-    -webkit-flex-direction: row;
-  }
-  article:nth-child(even){
-    -webkit-flex-direction: row-reverse;
-  }
-
-  .intro {
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    justify-content: center;
-  }
+  /* ============ nav ================ */
 
   nav {
     -webkit-order: 999;
@@ -260,17 +543,30 @@ h3 {
     color: pink;
   }
 
-
   nav img {
     width: 75px;
     margin-top: -5px;
   }
 
-  h3 { 
-    font-weight: 400; 
-    margin-bottom: 45%; 
-    letter-spacing: 1px; 
-    padding-left: 2%; 
-    padding-right: 2%;
+  /* =========== intro =============== */
+
+  .intro {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    justify-content: center;
   }
+
+  /* ========== contact ============ */
+
+  .contact nav a:hover {
+    background-color: transparent;
+  }
+
+
+  /* ========== projects ============ */ 
+
+  .projects {
+    height: 120%;
+  }
+
 }
