@@ -105,13 +105,13 @@ section {
 }
 
 .team-bio {
-  max-width: 320px;
+  max-width: 300px;
   line-height: 150%;
   margin: 0 auto 10% auto;
 }
 
 .avatar {
-  max-width: 320px;
+  max-width: 3000px;
   margin: 0 auto 10% auto;
 }
 
@@ -137,7 +137,7 @@ section {
   text-align: center;
   margin-top: 5%;
   white-space: nowrap;
-  width: 100%;
+  width: 90%;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -145,7 +145,7 @@ section {
 }
 
 .avatar .bio {
-  max-width: 300px;
+  max-width: 280px;
 }
 
 .bio {
