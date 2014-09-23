@@ -102,6 +102,7 @@ section {
   -webkit-flex-direction: column;
   justify-content: center;
   width: 90%;
+  margin-left: 10%;
 }
 
 .team-bio {
