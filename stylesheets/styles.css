@@ -90,7 +90,6 @@ nav img {
   align-content: center;
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
 }
 
 .about h2 {
@@ -102,18 +101,16 @@ section {
   display: flex;
   -webkit-flex-direction: column;
   justify-content: center;
-  width: 90%;
-  margin-left: 10%;
 }
 
 .team-bio {
-  max-width: 300px;
+  max-width: 320px;
   line-height: 150%;
   margin: 0 auto 10% auto;
 }
 
 .avatar {
-  max-width: 3000px;
+  max-width: 320px;
   margin: 0 auto 10% auto;
 }
 
@@ -139,7 +136,7 @@ section {
   text-align: center;
   margin-top: 5%;
   white-space: nowrap;
-  width: 90%;
+  width: 100%;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -147,8 +144,7 @@ section {
 }
 
 .avatar .bio {
-  max-width: 90%;
-  margin-left: 6%;
+  max-width: 300px;
 }
 
 .bio {
