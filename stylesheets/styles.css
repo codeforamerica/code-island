@@ -146,6 +146,7 @@ section {
 
 .avatar .bio {
   max-width: 280px;
+  margin-left: 2%;
 }
 
 .bio {
