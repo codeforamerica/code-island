@@ -4,11 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" media="screen" />
+    <script src="https:////code.jquery.com/jquery-1.11.1.min.js" ></script>
+    <script src="javascript/main.js"></script>
     <title>Code Island - Code for America's 2014 Rhode Island Fellowship Team
     </title>
   </head>
   <body>
-    <div class="intro">
+    <div class="intro" id="intro">
       <header>
         <h1>Code Island<h1>
           <h3>2014 Code for America Fellowship collaboration with the state of Rhode Island</h3>
@@ -16,7 +18,7 @@
       <nav>
         <a href="#about-us">about</a>
         <a href="#our-projects">projects</a>
-        <a href="#"><img src="images/flag_tag_inverse.png"></a>
+        <a href="#intro"><img src="images/flag_tag_inverse.png"></a>
         <a href="#our-partners">partners</a>
         <a href="#contact-us">contact</a>
       </nav>
@@ -26,16 +28,44 @@
         <h2>About us</h2>
       </header>
       <section>
-        <item>
-          <figure><img src="/images/jeff.png" alt="Jeff Maher, Code for America Fellow"></figure>
+        <div class="team-bio">
+        <p>The Code Island fellows are a team of three civic-minded technologists brought together by Code for America to collaborate with the State of Rhode Island in 2014.</p>
+      </div>
+      </section>
+      <section>
+        <div class="avatar">
+          <figure>
+            <img src="images/jeff.png" alt="Jeff Maher, Code for America Fellow">
+          </figure>
           <figcaption>Jeff Maher</figcaption>
-        </item>
-
+          <div class="bio" id="jeff-bio">
+            <p>Hailing from Philadelphia, Jeff is a nerd who likes using his coding skills for good. Before joining Code for America, Jeff helped create a web platform for diabetes data at Johnson &amp; Johnson, a crowd-sourced vacant parcel tracker called Reclaim Philly (via the Code for Philly Brigade), and a bike-parking locator. When he’s not civic coding, Jeff escapes from his computer screen with travel, hiking, and biking.</p>
+          </div>
+        </div>
+        <div class="avatar">
+          <figure>
+            <img src="images/amp.jpg" alt="Anna-Marie Panlilio, Code for America Fellow">
+          </figure>
+          <figcaption>Anna-Marie Panlilio</figcaption>
+          <div class="bio" id="amp-bio">
+            <p>Anna-Marie is a full-stack web developer who loves fleshing out vague concepts and turning them into elegant and delightful experiences for people. She is excited about using civic tech to empower citizens to solve their own problems. When she’s not coding, Anna-Marie enjoys capturing dancers in mid-air with her camera. She studied journalism and urban studies at Northwestern University.</p>
+          </div>
+        </div>
+        <div class="avatar">
+          <figure>
+            <img src="images/andrew.jpg" alt="Andrew Maier, Code for America Fellow">
+          </figure>
+            <figcaption>Andrew Maier</figcaption>
+            <div class="bio" id="andrew-bio">
+              <p>Andrew Maier is a lifelong student of the design community who believes that creation and learning are synonymous. In 2014, Andrew co-founded the publication Civic Quarterly with other Code for America Fellows to explore his interests in security, law, cities, and autonomy.
+              </p>
+            </div>
+        </div>
       </section>
       <nav>
         <a href="#about-us">about</a>
         <a href="#our-projects">projects</a>
-        <a href="#"><img src="images/flag_tag_inverse.png"></a>
+        <a href="#intro"><img src="images/flag_tag_inverse.png"></a>
         <a href="#our-partners">partners</a>
         <a href="#contact-us">contact</a>
       </nav>
@@ -45,10 +75,34 @@
       <header>
         <h2>Our projects</h2>
       </header>
+      <section>
+        <div class="avatar">
+          <figure>
+            <img src="images/golden-ticket.png" alt="Golden Ticket logo">
+          </figure>
+            <figcaption>Golden Ticket</figcaption>
+            <div class="bio" id="golden-ticket-description">
+              <p>allows parents to register their children for lotteries of one or more State sponsored pre-kindergarten program. The application also also performs the lottery selection process, automating a manual and time consuming process.
+              </p>
+              <p>More about <a href="https://github.com/codeforamerica/golden-ticket-console" target="_blank">Golden Ticket</a></p>
+            </div>
+        </div>
+        <div class="avatar">
+          <figure>
+            <img src="images/ticket-to-ride.png" alt="Ticket to Ride logo">
+          </figure>
+            <figcaption>Ticket to RIDE</figcaption>
+            <div class="bio" id="ticket-to-ride">
+              <p>Ticket to RIDE (Rhode Island Department of Education) is a web application that moves the paper-based student registration process online, with an emphasis on making it easier and more welcoming for parents and school administrators.
+              </p>
+              <p>Visit <a href="http://ticket2ri.de" target="_blank">Ticket2ri.de</a> demo</p>
+            </div>
+        </div>
+      </section>
       <nav>
         <a href="#about-us">about</a>
         <a href="#our-projects">projects</a>
-        <a href="#"><img src="images/flag_tag_inverse.png"></a>
+        <a href="#intro"><img src="images/flag_tag_inverse.png"></a>
         <a href="#our-partners">partners</a>
         <a href="#contact-us">contact</a>
       </nav>
@@ -58,23 +112,88 @@
       <header>
         <h2>Contact us</h2>
       </header>
+      <section>
+        <h3><a href="mailto: rhodeisland@codeforamerica.org">rhodeisland (at) codeforamerica(dot)org</h3>
+      </section>
       <nav>
         <a href="#about-us">about</a>
         <a href="#our-projects">projects</a>
-        <a href="#"><img src="images/flag_tag_inverse.png"></a>
+        <a href="#intro"><img src="images/flag_tag.png"></a>
         <a href="#our-partners">partners</a>
         <a href="#contact-us">contact</a>
       </nav>
     </div>
 
-    <div class="about" id="our-partners">
+    <div class="partners" id="our-partners">
       <header>
         <h2>Our partners</h2>
       </header>
+      <section class="ode">
+        <div class="avatar">
+          <figure>
+            <img src="images/thom.png" alt="Thom Guertin, Rhode Island Chief Digital Officer">
+          </figure>
+            <figcaption>Thom Guertin</figcaption>
+            <div class="bio" id="thom-bio">
+              <p>Thom, who is Rhode Island’s first Chief Digital Officer, heads the State’s Office of Digital Excellence. His office leverages technology to provide citizens with increased access to government. Before joining the state, Thom was an instrumental member of the team that created Monster.com. After leaving Monster, Thom led large business technology projects at Acushnet and The Boston Globe / NY Times. He’s currently overseeing a host of digital initiatives, including: software to manage the RI Department of Motor Vehicles; the State’s healhcare exchange, HealthSourceRI; and the Code for America initiative.
+              </p>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="avatar">
+          <figure>
+            <img src="images/ride-logo.png" alt="Rhode Island Dept of Education">
+          </figure>
+          <figcaption>Rhode Island Dept. of Education (RIDE)</figcaption>
+          <div class="bio"><p>
+            RIDE's Early Childhood Education Department has been focused on expanding offerings of State sponsored pre-kindergarten programs ever since the Race to the Top Early Learning Challenge. The existing paper process presented hurdles to parents, especially to those that might need to drive to a school to pickup/deliver forms. On the other hand, the lottery selection process was administratively burdensome and was a barrier to expanding offerings. Working with the fellows to create Golden Ticket, they helped make lottery enrollment easier, and hopefully next year there will be more pre-k offerings.</p>
+          </div>
+        </div>
+        
+        <div class="avatar">
+          <figure>
+            <img src="images/bbri.jpg" alt="Broadband RI">
+          </figure>
+          <figcaption>Broadband Rhode Island</figcaption>
+          <div class="bio">
+            <p>
+            Broadband Rhode Island (BBRI) works to increase the availability and use of broadband—and the services and tools it enables—throughout Rhode Island. With digital literacy being a huge factor around the <a href="http://en.wikipedia.org/wiki/Digital_divide_in_the_United_States" target="_blank">digital divide</a>, BBRI has developed an extensive technology training curriculum that is being used across the state. With its involvement in technology education, BBRI was invaluable in developing education contacts through the state, as well as serving as a reminder that our apps should be accessible to those who are less tech savvy.
+            </p>
+          </div>
+        </div>
+
+      </section>
+      <section>
+        <div class="avatar">
+          <figure>
+            <img src="images/newport-logo.png" alt="Newport Public Schools">
+          </figure>
+          <figcaption>Newport Public Schools (NPS)</figcaption>
+          <div class="bio">
+            <p>
+            Newport, RI's school district is one of the early adopters of Ticket to RIDE. Two family service coordinators in Newport originally inspired Ticket to RIDE, explaining to the fellows how warmer interactions with parents would improve school-parent relationships. The administration and data management staff has been incredibly helpful and hope to give parents a better first impression via the student registration process.
+            </p>
+          </div>
+        </div>
+
+        <div class="avatar">
+          <figure>
+            <img src="images/west-warwick-logo.png" alt="West Warwick Public Schools">
+          </figure>
+        <figcaption>West Warwick Public Schools (WWPS)</figcaption>
+          <div class="bio">
+            <p>
+            West Warwick, RI is a celebrity city when it comes to education technology. The district made waves a few years ago by piloting a <a href="http://en.wikipedia.org/wiki/One_to_one_computing_(education)" target="_blank">1-to-1</a> Chromebook initiative that allowed more kids and families to get online, even while reducing the school's technology costs. West Warwick will be the among the first schools to use Ticket to RIDE and has been helping with data integration to one of RI's major student information systems. 
+            </p>
+          </div>
+        </div>
+
+      </section>
       <nav>
         <a href="#about-us">about</a>
         <a href="#our-projects">projects</a>
-        <a href="#"><img src="images/flag_tag_inverse.png"></a>
+        <a href="#intro"><img src="images/flag_tag_inverse.png"></a>
         <a href="#our-partners">partners</a>
         <a href="#contact-us">contact</a>
       </nav>
