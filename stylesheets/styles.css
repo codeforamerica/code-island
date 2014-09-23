@@ -199,6 +199,8 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact a {
@@ -222,11 +224,31 @@ section {
   margin-top: 2%;
 }
 
+.contact h3 {
+  margin-left: 0;
+}
+
+.contact nav {
+  margin-bottom: 5%;
+}
+
+.contact section {
+  margin-left: 0;
+}
+
+.contact .subhead {
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 700;
+  text-align: center;
+  height: 80px;
+}
+
 /* ========== PARTNERS ===========*/
 
 .partners {
   margin-top: 640px;
-  height: 120%;
+  height: 200%;
   background-color: #c8aa86;
   color: #f2e4d4;
 }
@@ -361,27 +383,46 @@ section {
     -webkit-flex-direction: column;
   }
 
-  .projects section {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    width: 100%;
-  }
 
   /* =========== partners ============= */
 
+  .partners{
+    height: 270%;
+  }
+
+  .partners section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: flex-start;
+    width: 100%;
+  }
+
+  .partners section .ode{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+  }
+
   .partners .avatar {
     max-width: 720px;
+    position: relative;
   }
 
   .partners .avatar figure {
-    border: 1px solid #b39571;
+    border: none;
   }
 
   .partners .avatar .bio {
     max-width: 720px;
   }
-
+  
+  .size1 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
 
 }
