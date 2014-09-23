@@ -146,12 +146,13 @@ section {
 
 .avatar .bio {
   max-width: 280px;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .bio {
   margin-top: 5%;
   line-height: 150%;
+  margin-left: 5%;
 }
 
 .hidden {
