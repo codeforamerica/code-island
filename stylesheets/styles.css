@@ -411,17 +411,34 @@ section {
     -webkit-flex-direction: column;
   }
 
-  .partners .avatar {
+  .partners section .avatar .size3{
     max-width: 720px;
     position: relative;
   }
 
-  .partners .avatar figure {
+  .partners section .avatar .size1 {
+    max-width: 400px;
+  }
+
+  .partners section .avatar figure {
     border: none;
   }
 
-  .partners .avatar .bio {
+  div#size3.bio{
     max-width: 720px;
+    min-width: 500px;
+  }
+
+  div#size3.bio p{
+    margin-left: -35%;
+  }
+
+  div.bio.size1 {
+    min-width: 400px;
+  }
+
+  div.bio.size1 p{
+    margin-left: -25%;
   }
   
 /*  .size1 {
