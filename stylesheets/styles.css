@@ -243,7 +243,7 @@ section {
 
 .partners {
   margin-top: 640px;
-  height: 200%;
+  min-height: 250%;
   background-color: #c8aa86;
   color: #f6ece1;
 }
@@ -382,7 +382,7 @@ section {
   /* =========== partners ============= */
 
   .partners{
-    height: 270%;
+    max-height: 280%;
   }
 
   .partners section {
@@ -506,6 +506,17 @@ section {
     background-color: transparent;
   }
 
+  .contact h3 {
+    margin-top: 0;
+    margin-left: 10%;
+  }
+
+  /* ========== partners ============ */
+
+  .partners{
+    min-height: 280%;
+  }
+
 }
 
 
@@ -567,6 +578,12 @@ section {
 
   .projects {
     height: 120%;
+  }
+
+  /* ========== partners ============ */
+
+  .partners{
+    max-height: 260%;
   }
 
 }
